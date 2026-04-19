@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="hero">
+    <h1>Welcome to <span>AuthApp</span></h1>
+    <p class="lead">A secure, beautifully designed authentication system built with Flask & SQLite.</p>
+    <div class="cta-buttons">
+        <a href="{{ url_for('signup') }}" class="btn-primary">Get Started</a>
+        <a href="{{ url_for('login') }}" class="btn-secondary">Login</a>
+    </div>
+</div>
+<div class="features">
+    <div class="feature-card">
+        <div class="icon">🔒</div>
+        <h3>Secure</h3>
+        <p>Passwords hashed with Werkzeug.</p>
+    </div>
+    <div class="feature-card">
+        <div class="icon">⚡</div>
+        <h3>Fast</h3>
+        <p>Lightweight SQLite backend.</p>
+    </div>
+    <div class="feature-card">
+        <div class="icon">🎨</div>
+        <h3>Modern UI</h3>
+        <p>Glassmorphism & smooth animations.</p>
+    </div>
+</div>
+{% endblock %}
